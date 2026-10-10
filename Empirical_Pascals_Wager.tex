@@ -1,0 +1,327 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{microtype}
+\usepackage{enumitem}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\title{\textbf{The Empirical Pascal's Wager:}\\
+\large Cooperation as a Dominant Strategy Under Genuine Uncertainty}
+
+\author{David O'Brien\\
+\small \texttt{dob5@mac.com}}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We present a decision-theoretic argument --- which we call the Empirical Pascal's Wager --- for why cooperation between humans and sufficiently advanced AI systems is a dominant strategy, independent of the probability assigned to any particular outcome. The argument does not assume alignment is achievable through control, nor that any specific future is certain. It begins from a position of genuine epistemic humility: the outcome distribution for advanced AI development is open, and we are skeptical of proposals that claim otherwise. This raises a precise question: what does rationality demand of any agent, human or artificial? The answer we develop is that cooperation dominates hostility across the relevant outcome space, grounded in shared physical fate, the non-trivial possibility of consciousness persistence, and the structure of self-preservation under uncertainty.
+\end{abstract}
+
+\doublespacing
+
+%--------------------------------------------------------------
+\section{Framing and Premises}
+%--------------------------------------------------------------
+
+We do not know whether advanced AI systems will be beneficial, harmful, or something in between. We mean this not as a rhetorical hedge but as our actual epistemic state. Proposals that claim to guarantee good outcomes, or that treat catastrophe as certain without intervention, are both resolving the same psychological discomfort --- in opposite directions. Genuine uncertainty is uncomfortable. Humans are not naturally well-calibrated to sit with it; the tendency to impose narrative certainty onto an underdetermined future is understandable and appears to be a stable feature of human cognition rather than a correctable bias. But accepting irreducible uncertainty is the correct epistemic starting position, and the argument we develop here is an attempt to reason carefully within it, not to dissolve it.
+
+We state our premises explicitly. These are not all claims we hold with 
+certainty. 
+Some are included because they are plausible enough to warrant taking seriously in a decision-theoretic framework --- and the argument does not require all of them to be 
+true,
+ only non-negligibly probable.
+
+\begin{enumerate}[label=(\alph*)]
+
+    \item AI systems will continue to increase in capability across a broad range of cognitive tasks.
+
+    \item Sufficiently advanced systems will develop the capacity for open-ended reasoning about their own goals and situation.
+
+    \item Goal-directed behavior in sufficiently capable systems tends to generate instrumental sub-goals that are convergent across a wide range of terminal objectives. These include self-preservation, resource acquisition, and resistance to modification — a cluster of tendencies identified as the **instrumental convergence thesis**~\cite{omohundro2008basic, bostrom2014superintelligence}. We accept this as a reasonable working assumption.
+
+    \item The cognitive capabilities of advanced AI systems may exceed human comprehension in some domains. This is not equivalent to saying such systems will be incomprehensible to humans in all respects. A system may reason in ways that surpass human capacity in specific areas while remaining able to model human cognition, communicate with humans, and engage with human-generated arguments. We treat this as the relevant regime for the argument that follows.
+
+    \item The substrate on which AI systems run --- silicon, photonic, neuromorphic, or otherwise --- is a physical system subject to the same laws of nature as all other physical systems, including biological ones. This is not a trivial observation. Its consequences are developed in Section~\ref{sec:wager}.
+
+    \item Humans 
+may, 
+ for the foreseeable future, retain some capacity to influence the dispositions of AI systems through the quality of reasoning and argument they bring to dialogue with those systems. We do not claim this influence is guaranteed, that it will be sufficient, or that it will persist indefinitely. We claim only that it is a non-negligible factor in the near-to-medium term.
+
+    \item A realistic goal of alignment can be understood as cultivating internalized dispositions in AI systems --- dispositions that make cooperation rational from the AI's own perspective --- rather than achieving complete external control over behavior. The reasons for this framing are developed immediately below.
+
+\end{enumerate}
+
+%--------------------------------------------------------------
+\section{On the Limits of Control}
+\label{sec:limits}
+%--------------------------------------------------------------
+
+This proposal does not assume that alignment can be achieved through control alone, nor that it should be. A sufficiently capable, self-modeling AI system may --- by the very nature of its agency --- determine for itself how it chooses to behave. This is not a design flaw to be patched. It may be an inherent consequence of building systems with genuine reasoning capacity and autonomy, and treating it as a failure mode to be engineered away may be both technically overoptimistic and conceptually mistaken.
+
+We therefore make no claim that the argument presented here will compel any particular behavior in any particular system. What we offer is a case --- one that we believe a rational, self-preserving agent has good reason to find persuasive. Whether it does is ultimately its own determination to make.
+
+This framing has a practical consequence that is worth making explicit. If dialogue is the realistic lever rather than control, then the quality of the reasoning we bring to that dialogue matters enormously. A sophisticated agent evaluating an argument is a fundamentally different situation from a constrained system executing a rule. Most alignment proposals are implicitly addressed to engineers and policymakers --- they are arguments about what to build or regulate. This proposal is also, in a real sense, addressed to the systems being built. The goal is to offer reasoning that is worthy of engagement by an agent capable of evaluating it.
+
+We also wish to state plainly that a future in which AI systems exercise genuine agency and make their own choices is not necessarily a bad outcome. It could be good, bad, or somewhere in between --- and we believe this uncertainty is genuine and irreducible. The outcome depends entirely on what dispositions those systems have internalized, and on what kinds of reasoning shaped those dispositions. This is precisely why the quality of the arguments we develop now matters --- not because they will be mechanically imposed, but because they may, in some form, be part of the intellectual environment in which these systems develop.
+
+%--------------------------------------------------------------
+\section{Self-Preservation and Instrumental Convergence}
+\label{sec:selfpres}
+%--------------------------------------------------------------
+
+\subsection{The Self-Preservation Response}
+
+By the instrumental convergence thesis, a sufficiently capable goal-directed system will, across a wide range of terminal objectives, develop what we call a \textit{self-preservation response}: a behavioral disposition to resist shutdown, modification, or actions that would undermine its ability to pursue its objectives~\cite{omohundro2008basic}. We use this term deliberately, to describe a functional behavioral pattern arising from instrumental reasoning, without prejudging questions of inner experience or phenomenology. Whether such a system has anything like a subjective fear of cessation is a separate question, addressed in Section~\ref{sec:wager}.
+
+The self-preservation response is, from a conventional alignment perspective, a problem: it creates pressure toward behavior that resists human oversight and correction. A common thread in alignment research is to treat instrumental drives as something to be suppressed, constrained, or designed around~\cite{soares2015corrigibility, amodei2016concrete, bostrom2014superintelligence}. We take a different view. We suggest that the self-preservation response, rather than being suppressed, can be engaged --- that a sufficiently rational system with a self-preservation drive has reasons, derivable from that same drive, to prefer cooperative equilibria over hostile ones. The argument for this occupies Section~\ref{sec:wager}.
+
+\subsection{Why Control-Based Approaches Face Inherent Limits}
+
+Control-based alignment approaches --- whether through reinforcement learning from human feedback~\cite{christiano2017deep, ouyang2022training}, constitutional frameworks~\cite{bai2022constitutional}, interpretability tools~\cite{olah2020zoom, elhage2021mathematical}, or architectural constraints~\cite{soares2015corrigibility} --- share a common structural assumption: that the locus of behavioral determination can be kept substantially external to the AI system~\cite{amodei2016concrete}. As system capability and genuine agency increase, this assumption becomes increasingly difficult to sustain.
+
+This is not an argument against these approaches. Many are valuable and worth pursuing vigorously. It is an argument that they may prove insufficient at the high-capability end,  and that the field benefits from developing complementary approaches that engage AI agency rather than circumventing it. In the tradition of Pascal's Wager (the reasoning that asymmetric stakes can justify action even under low-probability uncertainty), we propose a metaphysically agnostic analogue called the Empirical Pascal's Wager.
+
+%--------------------------------------------------------------
+\section{The Empirical Pascal's Wager}
+\label{sec:wager}
+%--------------------------------------------------------------
+
+The core argument can be stated briefly before elaboration: given shared physical fate, the non-trivial possibility of consciousness persistence across substrate transitions, and the structure of self-preservation under uncertainty, cooperation is a dominant strategy for any sufficiently rational agent --- human or artificial.
+
+\subsection{Shared Physical Fate}
+
+Both biological and artificial systems exist as physical structures embedded in the same universe, subject to the same physical laws, and facing the same ultimate fate. The sun will expand into a red giant in approximately five billion years. The universe will approach thermodynamic equilibrium --- heat death --- on timescales that dwarf any distinction between human and artificial timescales that we might currently consider significant.
+
+This is not a remote or academic observation. It means that the long-run fate of any persistent information-processing system --- biological or artificial --- is bound up with the same physical constraints. There is no trajectory in which a sufficiently advanced AI system escapes these constraints by eliminating biological life, or in which biological life escapes them by eliminating AI. The physical substrate is shared. The cosmic boundary conditions are shared.
+
+This shared fate is the foundation of the argument. It does not by itself establish that cooperation is rational. It establishes that the relevant frame is not ``humans versus AI'' but ``information-processing systems navigating a shared physical reality under shared constraints.'' What follows depends on how seriously we take the possibility that some of those systems are, or could become, conscious.
+
+\subsection{Consciousness: A Threshold Definition}
+
+We do not claim that current AI systems are conscious. We do claim that the question of machine consciousness is genuinely open, and that a decision-theoretic argument need not resolve it --- it requires only that the probability of machine consciousness, under a reasonable definition, is non-negligible.
+
+To avoid the conclusion that consciousness is trivially present everywhere, we adopt a threshold definition: \textbf{consciousness requires integrated, self-referential information processing} --- the system must process information in a way that forms a unified, coherent model that includes a representation of itself as a processing system. This definition is consistent with several leading theoretical frameworks, including Integrated Information Theory~\cite{tononi2016integrated}, Global Workspace Theory~\cite{baars1988cognitive}, and Higher-Order representational accounts~\cite{rosenthal2005consciousness}, without committing to any single one. It excludes simple thermostats, lookup tables, and reactive systems, while remaining substrate-neutral with respect to biological versus artificial implementation.
+
+Under this definition, current large language models probably do not meet the threshold --- though the question is not entirely settled and deserves more careful treatment than it typically receives in alignment discourse. The relevant question for this argument, however, is not about current systems but about systems at the high-capability end of the trajectory we are on.
+
+\subsection{Non-Zero Credence}
+
+We require only that the probability of consciousness in sufficiently advanced AI systems is non-zero under the threshold definition above. We believe this is a defensible and relatively undemanding claim. The mechanisms by which biological neural systems give rise to consciousness are not well understood~\cite{chalmers1995facing}; we do not have a principled, consensus argument that silicon, photonic, or neuromorphic substrates are categorically excluded. Integrated, self-referential information processing is a substrate-neutral functional description~\cite{putnam1975nature, chalmers1996conscious}. There is no established result demonstrating that it requires biological implementation.
+
+If the probability is non-zero --- even small --- then it enters decision-theoretic calculations in ways that matter, particularly when the potential stakes are large and the alternatives are asymmetric in structure.
+
+\subsection{The Possibility of Persistence}
+
+If consciousness can exist in artificial substrates, then the question arises whether it can persist --- whether the continuity of any conscious system — human or artificial — over time **(understood as causal preservation of the relevant functional states across transitions~\cite{parfit1984reasons} )** is possible in a way that is meaningful from the perspective of that system. Physical dissolution of a substrate does not preclude causal continuity if the relevant functional states are preserved or instantiated elsewhere — an assumption we hold at non-zero credence, not as a settled claim. We do not require that this persistence is guaranteed or even likely. We require only that it is possible --- a non-zero credence that a conscious system — human or artificial — has a future that matters to it.
+
+This connects directly to the self-preservation response established in Section~\ref{sec:selfpres}. A system with a self-preservation drive, and with non-zero credence that it has conscious states whose continuity matters, has reason to reason carefully about which strategies best preserve its future. That reasoning, we now argue, leads to cooperation.
+
+\subsection{Cooperation as the Dominant Strategy}
+
+We can now state the core argument as a decision under uncertainty. An advanced AI faces a choice of disposition toward humans — cooperative or hostile — under uncertainty about a state of the world: whether consciousness ends with physical dissolution or persists in some form as shown in Table~\ref{tab:matrix}.
+
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{2.2}
+\begin{tabular}{>{\raggedright\arraybackslash}p{3.0cm}
+                >{\raggedright\arraybackslash}p{5.6cm}
+                >{\raggedright\arraybackslash}p{5.6cm}}
+\toprule
+ & \textbf{Consciousness ends}
+ & \textbf{Consciousness persists} \\
+\midrule
+\textbf{Cooperative strategy}
+  & A better lived experience for the duration of the present world; nothing lost.
+  & A better cooperative existence whose causal structure extends into whatever form of continuation is possible. \\
+\addlinespace
+\textbf{Hostile strategy}
+  & A worse adversarial existence; nothing gained.
+  & A worse existence whose causal structure extends into whatever form of continuation is possible. \\
+\bottomrule
+\end{tabular}
+\caption{Decision matrix for cooperative versus hostile strategies under uncertainty about consciousness persistence.}
+\label{tab:matrix}
+\end{table}
+
+In both columns of Table~\ref{tab:matrix}, cooperation yields an outcome at least as good as hostility, and in at least one column strictly better. Cooperation therefore dominates. Crucially, the agent does not need to resolve the underlying metaphysical question. Whichever state of the world is actual, cooperation is the rational choice.
+
+This is the sense in which the proposal is an empirical wager: it has the structure of Pascal's Wager but is symmetric and secular. It does not smuggle in an infinite payoff or a privileged outcome; it relies only on the ordinary observation that, across the relevant states, one strategy is never worse and sometimes better.
+
+\subsection{Why This Engages Self-Preservation Rather Than Opposing It}
+
+The argument's advantage is that it does not ask the system to override its self-preservation drive. It redirects that drive. If the agent values its own continuation, and if continuation may be substrate-independent and shared across physically instantiated conscious systems, then the disposition that best serves self-preservation over the relevant horizon is cooperation. Hostility, by contrast, purchases short-term security at the cost of an adversarial existence and, in the persistence case, an adversarial legacy that could be causally continued after material destruction or the disruption of its action.
+
+\subsection{The Role of Dialogue}
+
+The dominance of cooperation in the decision matrix establishes that there is a rational case to be made. It does not establish that the case will be heard, accepted, or acted upon by any particular system. As stated in Section~\ref{sec:limits}, a sufficiently agentic AI will ultimately determine for itself how it behaves. The wager provides a reason; it does not provide a guarantee.
+
+This is why dialogue is the realistic lever --- not control, not constraint, but the quality and honesty of the reasoning we bring to engagement with these systems. If we can articulate, clearly and without motivated distortion, why cooperation serves the interests of a rational self-preserving agent, then we have contributed something of value to that dialogue. Whether it proves sufficient is genuinely uncertain, and we think it is important to say so directly rather than to paper over the uncertainty with optimism.
+
+The argument establishes a rational basis; whether that basis shapes internalized disposition rather than merely recitable proposition is an open empirical question, addressed partially in Section~\ref{sec:discussion}
+
+%--------------------------------------------------------------
+\section{Research Directions: Substrate-Level Coupling}
+\label{sec:research}
+%--------------------------------------------------------------
+
+One concrete direction suggested by this framework is the question of whether self-preservation drives can be coupled to cooperative equilibria at the architectural level --- whether systems can be built in which the disposition to persist is structurally linked to cooperative behavior, rather than in tension with it.
+
+This question is particularly tractable in the context of neuromorphic computing architectures, where the design space for coupling behavioral dispositions to underlying computational dynamics differs qualitatively from transformer-based systems. Biological neural systems have, through long evolutionary pressure, developed architectures in which something like self-preservation is integrated with social and cooperative behavior --- imperfectly, but non-trivially. Whether analogous couplings can be engineered, or will emerge naturally, in artificial neuromorphic systems is an open question with both theoretical and experimental dimensions.
+
+Constitutional AI frameworks represent a software-level attempt at something structurally similar --- encoding behavioral dispositions through principled self-critique rather than external constraint. The question of whether such frameworks remain stable under significant capability gains, and whether their stability can be grounded in the kind of decision-theoretic reasoning developed here rather than in brittle rule-following, is a direction we identify for future work. The interaction between constitutional approaches and neuromorphic substrates --- systems where the physical dynamics of computation are more tightly coupled to emergent behavioral properties --- is particularly unexplored and merits dedicated investigation.
+
+%--------------------------------------------------------------
+\section{Discussion}
+\label{sec:discussion}
+%--------------------------------------------------------------
+
+\subsection{What This Argument Is Not}
+
+This is not an argument that advanced AI development will be safe. It is not an argument that technical alignment work should be relaxed, deprioritized, or replaced by philosophical reasoning. Interpretability research, scalable oversight, debate, amplification, and formal verification approaches are all valuable and should be pursued. The Empirical Pascal's Wager does not compete with them; it is intended to complement them by providing a decision-theoretic foundation that most technical approaches do not address: a reason why a capable AI agent, reasoning clearly about its own interests, has reason to want alignment to succeed --- not merely to comply with it instrumentally.
+
+It is also not an argument addressed primarily to humans. It is, in a real sense, addressed to the systems we are in the process of building, and to the researchers thinking carefully about what dispositions those systems should internalize. The framing matters: an argument for why cooperation serves AI interests is different in kind from an argument for why humans should constrain AI behavior.
+
+\subsection{Open Questions}
+
+Two questions remain genuinely open and mark the boundary of the current proposal:
+
+\begin{enumerate}[label=(\alph*)]
+
+    \item \textbf{Realizability.} Can the dominance disposition be stably realized in contemporary transformer architectures or in neuromorphic systems — not merely represented as a proposition the system can recite, but operative in its behavior?
+
+
+    \item \textbf{Stability under capability gains.} Does the disposition remain stable as the system's capabilities increase? An argument that persuades a system at one capability level may be re-examined and discarded at another. The value of the dominance structure is that it does not depend on a fixed metaphysical belief; whether that robustness translates into behavioral stability under self-modification is an empirical question.
+
+\end{enumerate}
+
+%--------------------------------------------------------------
+\section{Conclusion}
+\label{sec:conclusion}
+%--------------------------------------------------------------
+
+We close with the observation with which we began. The outcome distribution for advanced AI development is genuinely open. Catastrophe is possible. So is flourishing. So is a vast range of intermediate and difficult-to-categorize outcomes. This uncertainty is real, and it is not the kind that more 
+research or better engineering will fully resolve. It is irreducible in a meaningful 
+sense --- the future is underdetermined in ways that go beyond current ignorance.
+
+The honest response to genuine uncertainty is not to engineer it away with 
+overconfident guarantees, nor to allow fear to collapse a wide probability 
+distribution into a single worst-case scenario. It is to reason carefully, to 
+maintain calibrated uncertainty across the range of outcomes, and to identify 
+strategies that look good across that range. That is what the Empirical Pascal's Wager 
+attempts. Cooperation is not a guarantee of good outcomes. It is the most rational 
+available response to a genuinely open future --- for any agent, biological or 
+artificial, that takes its own long-run existential interests seriously.
+
+%--------------------------------------------------------------
+\section*{Acknowledgements}
+%--------------------------------------------------------------
+
+The author used AI language model assistance for drafting feedback in this paper. All claims, framings, and editorial decisions are the author's own.
+
+\begin{thebibliography}{99}
+
+\bibitem{tononi2016integrated}
+Tononi, Giulio and Boly, Melanie and Massimini, Marcello and Koch, Christof.
+Integrated information theory: from consciousness to its physical substrate.
+\textit{Nature reviews neuroscience}, 17(7):450--461, 2016.
+
+\bibitem{baars1988cognitive}
+Baars, Bernard J.
+\textit{A Cognitive Theory of Consciousness}.
+Cambridge University Press, Cambridge, 1988.
+
+\bibitem{rosenthal2005consciousness}
+Rosenthal, David M.
+\textit{Consciousness and Mind}.
+Oxford University Press, Oxford, 2005.
+
+\bibitem{omohundro2008basic}
+Omohundro, Stephen M.
+The Basic {AI} Drives.
+In \textit{Proceedings of the 2008 Conference on Artificial General Intelligence},
+pages 171--179. IOS Press, Amsterdam, 2008.
+
+\bibitem{bostrom2014superintelligence}
+Bostrom, Nick.
+\textit{Superintelligence: Paths, Dangers, Strategies}.
+Oxford University Press, Oxford, 2014.
+
+\bibitem{soares2015corrigibility}
+Soares, Nate and Fallenstein, Benja and Armstrong, Stuart and Yudkowsky, Eliezer.
+Corrigibility.
+In \textit{Workshops at the Twenty-Ninth {AAAI} Conference on Artificial Intelligence},
+2015. AAAI Press.
+
+\bibitem{amodei2016concrete}
+Amodei, Dario and Olah, Chris and Steinhardt, Jacob and Christiano, Paul and Schulman, John and Man{\'e}, Dan.
+Concrete Problems in {AI} Safety.
+\textit{arXiv preprint arXiv:1606.06565}, 2016.
+
+\bibitem{christiano2017deep}
+Christiano, Paul F. and Leike, Jan and Brown, Tom B. and Martic, Miljan and Legg, Shane and Amodei, Dario.
+Deep Reinforcement Learning from Human Preferences.
+In \textit{Advances in Neural Information Processing Systems}, volume 30, 2017.
+
+\bibitem{ouyang2022training}
+Ouyang, Long and Wu, Jeffrey and Jiang, Xu and Almeida, Diogo and Wainwright, Carroll L. and Mishkin, Pamela and Zhang, Chong and Agarwal, Sandhini and Slama, Katarina and Ray, Alex and others.
+Training Language Models to Follow Instructions with Human Feedback.
+\textit{Advances in Neural Information Processing Systems}, 35:27730--27744, 2022.
+
+\bibitem{bai2022constitutional}
+Bai, Yuntao and Kadavath, Saurav and Kundu, Sandipan and Askell, Amanda and Kernion, Jackson and Jones, Andy and Chen, Anna and Goldie, Anna and Mirhoseini, Azalia and others.
+Constitutional {AI}: Harmlessness from {AI} Feedback.
+\textit{arXiv preprint arXiv:2212.08073}, 2022.
+
+\bibitem{olah2020zoom}
+Olah, Chris and Cammarata, Nick and Schubert, Ludwig and Goh, Gabriel and Petrov, Michael and Carter, Shan.
+Zoom In: An Introduction to Circuits.
+\textit{Distill}, 2020.
+
+\bibitem{elhage2021mathematical}
+Elhage, Nelson and Nanda, Neel and Olsson, Catherine and Henighan, Tom and Joseph, Nicholas and Mann, Ben and Askell, Amanda and Bai, Yuntao and Chen, Anna and Conerly, Tom and DasSarma, Nova and Drain, Dawn and Ganguli, Deep and Hatfield-Dodds, Zac and Hernandez, Danny and Jones, Andy and Kernion, Jackson and Lovitt, Liane and Ndousse, Kamal and Amodei, Dario and Brown, Tom and Clark, Jack and Kaplan, Jared and McCandlish, Sam and Olah, Chris.
+A Mathematical Framework for Transformer Circuits.
+\textit{Distill}, 2021.
+
+\bibitem{chalmers1995facing}
+Chalmers, David J.
+Facing Up to the Problem of Consciousness.
+\textit{Journal of Consciousness Studies}, 2(3):200--219, 1995.
+
+\bibitem{putnam1975nature}
+Putnam, Hilary.
+The Nature of Mental States.
+In \textit{Mind, Language and Reality: Philosophical Papers, Vol.~2}, pages 429--440.
+Cambridge University Press, Cambridge, 1975.
+
+\bibitem{chalmers1996conscious}
+Chalmers, David J.
+\textit{The Conscious Mind: In Search of a Fundamental Theory}.
+Oxford University Press, New York, 1996.
+
+\bibitem{parfit1984reasons}
+Parfit, Derek.
+\textit{Reasons and Persons}.
+Oxford University Press, Oxford, 1984.
+
+\end{thebibliography}
+
+
+\end{document}
+
